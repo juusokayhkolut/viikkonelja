@@ -18,10 +18,10 @@ public class App {
             
             switch (choice) {
                 case 1:
+                    scanner.nextLine();
                     System.out.println("Anna opiskelijan nimi?");
                     String name = scanner.nextLine();
-                    scanner.nextLine();
-
+                    
                     System.out.println("Anna opiskelijan opiskelijanumero:");
                     String studentNumber = scanner.nextLine();
 
@@ -38,15 +38,14 @@ public class App {
                     break;
 
                 case 3:
+                    scanner.nextLine();
                     System.out.println("Mille opiskelijalle suorite lisätään?");
                     int studentIndex = scanner.nextInt();
-                    scanner.nextLine();
                     
                     Student selectedStudent = university.getStudents().get(studentIndex);
 
                     System.out.println("Mille kurssille suorite lisätään?");
                     String course = scanner.nextLine();
-                    scanner.nextLine();
                     
                     System.out.println("Mikä arvosana kurssille lisätään?");
                     int grade = scanner.nextInt();
@@ -55,6 +54,7 @@ public class App {
                     break;
 
                 case 4:
+                    scanner.nextLine();
                     System.out.println("Minkä opiskelijan suoritteet listataan?");
                     int selectedStudentIndex = scanner.nextInt();
                     
@@ -66,6 +66,7 @@ public class App {
                     break;
 
                 case 5:
+                    scanner.nextLine();
                     System.out.println("Minkä opiskelijan suoritteiden keskiarvo lasketaan?");
                     int averageStudentIndex = scanner.nextInt();
                     
@@ -75,6 +76,7 @@ public class App {
                     break;
 
                 case 6:
+                    scanner.nextLine();
                     System.out.println("Minkä opiskelijan suoritteiden mediaani lasketaan?");
                     int medianStudentIndex = scanner.nextInt();
                     
