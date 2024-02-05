@@ -20,6 +20,7 @@ public class App {
                 case 1:
                     System.out.println("Anna opiskelijan nimi?");
                     String name = scanner.nextLine();
+                    scanner.nextLine();
 
                     System.out.println("Anna opiskelijan opiskelijanumero:");
                     String studentNumber = scanner.nextLine();
@@ -39,11 +40,13 @@ public class App {
                 case 3:
                     System.out.println("Mille opiskelijalle suorite lisätään?");
                     int studentIndex = scanner.nextInt();
+                    scanner.nextLine();
                     
                     Student selectedStudent = university.getStudents().get(studentIndex);
 
                     System.out.println("Mille kurssille suorite lisätään?");
                     String course = scanner.nextLine();
+                    scanner.nextLine();
                     
                     System.out.println("Mikä arvosana kurssille lisätään?");
                     int grade = scanner.nextInt();
