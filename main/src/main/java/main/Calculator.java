@@ -1,11 +1,12 @@
 package main;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class Calculator {
+class Calculator implements Serializable {
     public static double getAverageGrade(Student student) {
         List<Grade> grades = student.getGrades();
         if (grades.isEmpty()) {

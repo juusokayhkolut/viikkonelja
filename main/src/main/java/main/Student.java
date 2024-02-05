@@ -1,9 +1,10 @@
 package main;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-class Student {
+class Student  implements Serializable{
     private String name;
     private String studentNumber;
     private List<Grade> grades;
