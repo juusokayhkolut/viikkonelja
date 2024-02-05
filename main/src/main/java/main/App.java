@@ -19,10 +19,11 @@ public class App {
             switch (choice) {
                 case 1:
                     System.out.println("Anna opiskelijan nimi?");
-                    
                     String name = scanner.nextLine();
+
                     System.out.println("Anna opiskelijan opiskelijanumero:");
                     String studentNumber = scanner.nextLine();
+
                     Student student = new Student(name, studentNumber);
                     university.addStudent(student);
                     break;
@@ -38,19 +39,22 @@ public class App {
                 case 3:
                     System.out.println("Mille opiskelijalle suorite lisätään?");
                     int studentIndex = scanner.nextInt();
-                    scanner.nextLine();
+                    
                     Student selectedStudent = university.getStudents().get(studentIndex);
+
                     System.out.println("Mille kurssille suorite lisätään?");
                     String course = scanner.nextLine();
+                    
                     System.out.println("Mikä arvosana kurssille lisätään?");
                     int grade = scanner.nextInt();
+                    
                     selectedStudent.addGrade(course, grade);
                     break;
 
                 case 4:
                     System.out.println("Minkä opiskelijan suoritteet listataan?");
                     int selectedStudentIndex = scanner.nextInt();
-                    scanner.nextLine();
+                    
                     Student selectedStudentToDisplay = university.getStudents().get(selectedStudentIndex);
                     List<Grade> studentGrades = selectedStudentToDisplay.getGrades();
                     for (Grade studentGrade : studentGrades) {
@@ -61,7 +65,7 @@ public class App {
                 case 5:
                     System.out.println("Minkä opiskelijan suoritteiden keskiarvo lasketaan?");
                     int averageStudentIndex = scanner.nextInt();
-                    scanner.nextLine();
+                    
                     Student averageStudent = university.getStudents().get(averageStudentIndex);
                     double average = Calculator.getAverageGrade(averageStudent);
                     System.out.println("Keskiarvo on " + average);
@@ -70,7 +74,7 @@ public class App {
                 case 6:
                     System.out.println("Minkä opiskelijan suoritteiden mediaani lasketaan?");
                     int medianStudentIndex = scanner.nextInt();
-                    scanner.nextLine();
+                    
                     Student medianStudent = university.getStudents().get(medianStudentIndex);
                     
                     double median = Calculator.getMedianGrade(medianStudent);
