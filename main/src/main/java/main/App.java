@@ -39,6 +39,10 @@ public class App {
 
                 case 3:
                     scanner.nextLine();
+                    List<Student> students2 = university.getStudents();
+                    for (int i = 0; i < students2.size(); i++) {
+                        System.out.println(i + ": " + students2.get(i).getName());
+                    }
                     System.out.println("Mille opiskelijalle suorite lisätään?");
                     int studentIndex = scanner.nextInt();
                     
