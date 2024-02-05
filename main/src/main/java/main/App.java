@@ -86,6 +86,7 @@ public class App {
 
                 case 0:
                     System.out.println("Kiitos ohjelman käytöstä.");
+                    scanner.close();
                     System.exit(0);
                     break;
 

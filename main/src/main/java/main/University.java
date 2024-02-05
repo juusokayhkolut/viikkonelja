@@ -39,13 +39,17 @@ public class University {
             e.printStackTrace();
         }
     }
-
+    
+    @SuppressWarnings("unchecked")
     public int loadFromFile() {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("university.dat"))) {
             students = (List<Student>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
+            return -1; // Or another suitable error code
         }
         return 0;
     }
+    
+    
 }
