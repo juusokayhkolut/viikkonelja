@@ -45,6 +45,7 @@ public class App {
                     }
                     System.out.println("Mille opiskelijalle suorite lisätään?");
                     int studentIndex = scanner.nextInt();
+                    scanner.nextLine();
                     
                     Student selectedStudent = university.getStudents().get(studentIndex);
 
@@ -53,6 +54,7 @@ public class App {
                     
                     System.out.println("Mikä arvosana kurssille lisätään?");
                     int grade = scanner.nextInt();
+                    scanner.nextLine();
                     
                     selectedStudent.addGrade(course, grade);
                     break;
