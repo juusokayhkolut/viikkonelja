@@ -61,6 +61,10 @@ public class App {
 
                 case 4:
                     scanner.nextLine();
+                    List<Student> students3 = university.getStudents();
+                    for (int i = 0; i < students3.size(); i++) {
+                        System.out.println(i + ": " + students3.get(i).getName());
+                    }
                     System.out.println("Minkä opiskelijan suoritteet listataan?");
                     int selectedStudentIndex = scanner.nextInt();
                     
@@ -73,6 +77,11 @@ public class App {
 
                 case 5:
                     scanner.nextLine();
+                    List<Student> students4 = university.getStudents();
+                    for (int i = 0; i < students4.size(); i++) {
+                        System.out.println(i + ": " + students4.get(i).getName());
+                    }
+
                     System.out.println("Minkä opiskelijan suoritteiden keskiarvo lasketaan?");
                     int averageStudentIndex = scanner.nextInt();
                     
@@ -83,6 +92,11 @@ public class App {
 
                 case 6:
                     scanner.nextLine();
+                    List<Student> students5 = university.getStudents();
+                    for (int i = 0; i < students5.size(); i++) {
+                        System.out.println(i + ": " + students5.get(i).getName());
+                    }
+
                     System.out.println("Minkä opiskelijan suoritteiden mediaani lasketaan?");
                     int medianStudentIndex = scanner.nextInt();
                     
